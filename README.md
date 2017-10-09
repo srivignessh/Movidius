@@ -5,7 +5,7 @@ Output: JSON String {name, image_id, match_pct}
 
 
 Note:  
-Image Files are stored in uploads folder(UPLOAD_FOLDER) in current directory 
+Image Files are stored in uploads folder(UPLOAD_FOLDER) in current directory   
 Unique Image id is generated to store the image.  
 
 Sample Usage  
