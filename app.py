@@ -8,11 +8,7 @@ ALLOWED_EXTENSIONS = set(['.png', '.jpg', '.jpeg'])
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-@app.route('/')
-def hello():
-    return "Hello World!"
-
-@app.route('/upload', methods=['POST'])
+@app.route('/', methods=['POST'])
 def upload():
     if request.method == 'POST':
         file = request.files['file']
